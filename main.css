@@ -1,0 +1,31 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css";
+
+.navbar {
+  background-color: lightblue;
+  position: fixed;
+  z-index: 5;
+}
+
+#welcome-section {
+  top: 3.25rem;
+  height: 100vh;
+  position: fixed;
+  background: white;
+  width: 100%;
+  z-index: 0;
+}
+
+#projects {
+  position: relative;
+  background: red;
+  height: calc(100vh - 3.25rem);
+  z-index: 10;
+  margin-top: 100vh;
+}
+
+#social {
+  position: relative;
+  height: calc(100vh - 3.25rem);
+  z-index: 10;
+  background-color: rgb(34, 34, 34);
+}
