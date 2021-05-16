@@ -1,7 +1,6 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css";
 
 .navbar {
-  background-color: lightblue;
   position: fixed;
   z-index: 5;
 }
@@ -10,37 +9,30 @@
   height: 100%;
 }
 
-#projects .container .level {
-  height: 85%;
-}
-
 #welcome-section {
-  top: 3.25rem;
-  height: 100vh;
-  position: fixed;
-  background: white;
   width: 100%;
   z-index: 0;
 }
 
+#welcome-section,
 #projects,
 #social {
-  min-height: calc(100vh - 3.25rem);
+  height: 100vh;
 }
 
-#projects {
-  position: relative;
-  background: red;
-  /* height: calc(100vh - 3.25rem); */
-  z-index: 10;
-  margin-top: 100vh;
+#welcome-section .container .level {
+  height: 100%;
 }
 
-#social {
+.footer {
+  background: transparent;
+}
+
+#social,
+#projects,
+.footer {
   position: relative;
-  /* height: calc(100vh - 3.25rem); */
   z-index: 10;
-  background-color: rgb(34, 34, 34);
 }
 
 .project-tile .card {
@@ -54,4 +46,36 @@
 .project-tile:hover {
   transition: transform 0.2s 0.1s ease-in-out;
   transform: scale(1.05);
+}
+
+#social-nav a {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  margin: 8px;
+}
+
+a.navbar-item:focus {
+  background-color: rgb(0, 209, 178);
+  color: #fafafa;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+}
+
+.blurb {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .mobile-blurb {
+    display: none;
+  }
+
+  .blurb {
+    display: unset;
+  }
 }

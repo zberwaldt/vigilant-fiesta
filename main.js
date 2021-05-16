@@ -1,6 +1,8 @@
 (function() {
     document.addEventListener('DOMContentLoaded', _ => {
 
+        feather.replace();
+
         let nowSection = document.getElementById('welcome-section');
         let projectsSection = document.getElementById('projects');
         let socialSection = document.getElementById('social');

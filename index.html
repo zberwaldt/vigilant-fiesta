@@ -11,48 +11,58 @@
 
 <body>
     <nav id="navbar" class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
-                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-            </a>
-
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-                data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-
-        <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-end">
-                <a id="nowLink" href="#welcome-section" class="navbar-item">
-                    Now
+        <div class="container">
+            <div class="navbar-brand">
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                 </a>
-
-                <a id="projectsLink" href="#projects" class="navbar-item">
-                    Projects
-                </a>
-
-
-                <a id="socialLink" href="#social" class="navbar-item">
-                    Social
-                </a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu is-justify-content-center">
+                <div class="navbar">
+                    <a id="nowLink" href="#welcome-section" class="navbar-item">
+                        Now
+                    </a>
+                    <a id="projectsLink" href="#projects" class="navbar-item">
+                        Projects
+                    </a>
+                    <a id="socialLink" href="#social" class="navbar-item">
+                        Social
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
     <section id="welcome-section" class="section">
         <div class="container">
-            <h1 class="title">Penis</h1>
-            <p class="subtitle">and Testicles</p>
+            <div class="level">
+                <div class="columns is-align-content-center is-justify-content-center">
+                    <div class="column is-one-third">
+                        <article class="box content">
+                            <h1 class="title">What am I doing?</h1>
+                            <h2 class="subtitle">Learning Data</h2>
+                            <p>Data is everywhere. It's becoming more ingrained in our lives. So, I've diceded to take
+                                the plunge and go back to school. Officially I'll be exploring Data Analytics and
+                                Management. However, the aim is to be more than that.</p>
+                            <p>The aim is to be a force for good, naturally. To use data, not to reduce people to mere
+                                numbers and graphs. Rather, use it to enrich the relationships I already have with those
+                                I collaborate with.</p>
+                            <p>It will be exciting to disocver to make data synergize with my current skills.</p>
+                            <p></p>
+                        </article>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section id="projects" class="section">
         <div class="container">
-            <h2 class="title has-text-centered has-text-light">Recent Work</h2>
+            <h2 class="title has-text-centered">Recent Work</h2>
             <div class="level">
                 <div class="columns">
-                    <a href="https://zberwaldt.github.io/miniature-palm-trees" target="_blank"
+                    <a href="https://zberwaldt.github.io/miniature-palm-tree/" target="_blank"
                         class="project-tile column">
                         <div class="card">
                             <div class="card-image">
@@ -66,7 +76,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="https://zberwaldt.github.io/miniature-palm-trees" target="_blank"
+                    <a href="https://zberwaldt.github.io/miniature-palm-tree/" target="_blank"
                         class="project-tile column">
                         <div class="card">
                             <div class="card-image">
@@ -87,11 +97,57 @@
     </section>
     <section id="social" class="section">
         <div class="container">
-            <h2 class="title">Connect With Me</h2>
+            <h2 class="title has-text-centered">Connect With Me</h2>
+            <div class="level">
+                <div class="columns">
+                    <div class="column">
+                        <article class="box content">
+                            <p>If you've liked what you've seen. I would love to hear from you. We can talk about your
+                                ideas
+                                or
+                                projects and map out how we can collaborate together to realize them.</p>
+                            <p class="blurb">To the right, I've provided direct links to the best ways you can continue
+                                to interact
+                                with
+                                me,
+                                and discover more of what I'm about.</p>
+                            <p class="mobile-blurb">below, I've provided direct links to the best ways you can continue
+                                to interact
+                                with
+                                me,
+                                and discover more of what I'm about.</p>
+                        </article>
+                    </div>
+                    <div class="column">
+                        <nav id="social-nav" class="box">
+                            <a id="profile-link" target="_blank" href="https://www.github.com/zberwaldt">
+                                <i class="icon" data-feather="github"></i>
+                                Github
+                            </a>
+                            <a href="mailto:example@example.com">
+                                <i class="icon" data-feather="mail"></i>
+                                Email Me
+                            </a>
+                            <a href="tel:555-555-5555">
+                                <i class="icon" data-feather="smartphone"></i>
+                                Call Me
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <script src="main.js"></script>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>This webiste and all content is Copyright &copy; <a target="_blank"
+                    href="https://www.zachberwaldt.com">Zach
+                    Berwaldt</a> since 2021 and beyond.</p>
+        </div>
+    </footer>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
