@@ -15,9 +15,12 @@
 }
 
 #welcome-section,
-#projects,
-#social {
+#projects {
   height: 100vh;
+}
+
+#social {
+  height: calc(100vh - 168px - 3.25rem);
 }
 
 #welcome-section .container .level {
@@ -48,9 +51,15 @@
   transform: scale(1.05);
 }
 
+#social-nav {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
 #social-nav a {
   font-size: 1.6rem;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   margin: 8px;
 }
