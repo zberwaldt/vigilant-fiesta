@@ -14,7 +14,10 @@
   z-index: 0;
 }
 
-#welcome-section,
+#welcome-section {
+  height: calc(100vh - 3.25rem);
+}
+
 #projects {
   height: 100vh;
 }
