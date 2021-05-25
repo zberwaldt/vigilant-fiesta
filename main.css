@@ -1,5 +1,6 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css";
 
+<<<<<<< HEAD
 .navbar {
   position: fixed;
   z-index: 5;
@@ -9,6 +10,8 @@
   margin-bottom: 2.5rem;
 }
 
+=======
+>>>>>>> a7ad3ef5ad46dae5b2166a39ba72f39e92ec36fb
 .container {
   height: 100%;
 }
@@ -19,16 +22,19 @@
 }
 
 #welcome-section {
-  height: calc(100vh - 3.25rem);
+  height: 100vh;
 }
 
 #projects {
   min-height: 100vh;
+<<<<<<< HEAD
   background-color: rgba(220, 220, 220, 1);
+=======
+>>>>>>> a7ad3ef5ad46dae5b2166a39ba72f39e92ec36fb
 }
 
 #social {
-  height: calc(100vh - 168px - 3.25rem);
+  min-height: calc(100vh - 168px - 3.25rem);
 }
 
 #social .columns {
